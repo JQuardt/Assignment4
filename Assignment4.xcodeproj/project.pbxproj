@@ -13,6 +13,7 @@
 		3B1130EB2B6C4F210010EE6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B1130E92B6C4F210010EE6D /* Main.storyboard */; };
 		3B1130ED2B6C4F230010EE6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B1130EC2B6C4F230010EE6D /* Assets.xcassets */; };
 		3B1130F02B6C4F230010EE6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B1130EE2B6C4F230010EE6D /* LaunchScreen.storyboard */; };
+		3BF38CFF2B702AB10065D488 /* song.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3BF38CFE2B702AB10065D488 /* song.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		3B1130EC2B6C4F230010EE6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B1130EF2B6C4F230010EE6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B1130F12B6C4F230010EE6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BF38CFE2B702AB10065D488 /* song.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = song.mp3; path = ../../../../Desktop/song.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		3B1130E22B6C4F210010EE6D /* Assignment4 */ = {
 			isa = PBXGroup;
 			children = (
+				3BF38CFE2B702AB10065D488 /* song.mp3 */,
 				3B1130E32B6C4F210010EE6D /* AppDelegate.swift */,
 				3B1130E52B6C4F210010EE6D /* SceneDelegate.swift */,
 				3B1130E72B6C4F210010EE6D /* ViewController.swift */,
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B1130F02B6C4F230010EE6D /* LaunchScreen.storyboard in Resources */,
+				3BF38CFF2B702AB10065D488 /* song.mp3 in Resources */,
 				3B1130ED2B6C4F230010EE6D /* Assets.xcassets in Resources */,
 				3B1130EB2B6C4F210010EE6D /* Main.storyboard in Resources */,
 			);

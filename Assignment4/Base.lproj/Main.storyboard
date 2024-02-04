@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,31 +13,37 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Assignment4" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="130" translatesAutoresizingMaskIntoConstraints="NO" id="Z33-aq-nSv">
-                                <rect key="frame" x="0.0" y="79" width="393" height="719"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="am" translatesAutoresizingMaskIntoConstraints="NO" id="vth-hU-Xi5" userLabel="backgroundImage">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Z33-aq-nSv">
+                                <rect key="frame" x="0.0" y="40" width="320" height="508"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cak-Fs-1Vf" userLabel="dateLabel">
-                                        <rect key="frame" x="176" y="0.0" width="41.333333333333343" height="153"/>
+                                        <rect key="frame" x="139.5" y="0.0" width="41.5" height="169.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0xW-VE-gDc">
-                                        <rect key="frame" x="36.666666666666657" y="283" width="320" height="153"/>
+                                        <rect key="frame" x="0.0" y="169.5" width="320" height="169"/>
                                     </datePicker>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="rTL-HZ-Iuu">
-                                        <rect key="frame" x="92.666666666666671" y="566" width="207.66666666666663" height="153"/>
+                                        <rect key="frame" x="105.5" y="338.5" width="109.5" height="169.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qbG-ez-Nic">
-                                                <rect key="frame" x="0.0" y="0.0" width="207.66666666666666" height="122.66666666666667"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="109.5" height="139"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Start Timer / Stop Music"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Start Timer"/>
+                                                <connections>
+                                                    <action selector="startTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nid-ew-UAX"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mZL-mV-fN4" userLabel="timeRemainingLabel">
-                                                <rect key="frame" x="83.333333333333329" y="132.66666666666663" width="41.333333333333329" height="20.333333333333343"/>
+                                                <rect key="frame" x="34" y="149" width="41.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -51,13 +57,21 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Z33-aq-nSv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="5GD-4c-ZDm"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Z33-aq-nSv" secondAttribute="trailing" id="EGL-SQ-IMP"/>
+                            <constraint firstAttribute="trailing" secondItem="Z33-aq-nSv" secondAttribute="trailing" id="EGL-SQ-IMP"/>
+                            <constraint firstItem="vth-hU-Xi5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="PVM-6E-sTC"/>
+                            <constraint firstAttribute="trailing" secondItem="vth-hU-Xi5" secondAttribute="trailing" id="QRM-Fy-EcC"/>
                             <constraint firstItem="Z33-aq-nSv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Uox-QR-8pP"/>
+                            <constraint firstAttribute="bottom" secondItem="vth-hU-Xi5" secondAttribute="bottom" id="mAM-DK-btV"/>
+                            <constraint firstItem="vth-hU-Xi5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="qQa-dL-nLX"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Z33-aq-nSv" secondAttribute="bottom" constant="20" id="ugi-oQ-YdQ"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="backgroundImage" destination="vth-hU-Xi5" id="wHY-Oj-O1N"/>
                         <outlet property="dateLabel" destination="Cak-Fs-1Vf" id="GxS-8u-GRE"/>
+                        <outlet property="datePicker" destination="0xW-VE-gDc" id="xBG-pQ-kCj"/>
+                        <outlet property="timeRemainingLabel" destination="mZL-mV-fN4" id="fJS-1e-apS"/>
+                        <outlet property="timerButton" destination="qbG-ez-Nic" id="YI4-8i-Cwh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -66,6 +80,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="am" width="2000" height="1333"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
